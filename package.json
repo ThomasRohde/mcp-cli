@@ -1,0 +1,25 @@
+{
+  "name": "mcp-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "js-yaml": "^4.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.13.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
